@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3580C8F-E5FD-499B-A52D-93FFD99CE2DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CAB57AFD-9E5F-451B-AC8D-8BCE98F06B11}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNext2016", "src\DotNext2016\DotNext2016.xproj", "{CF560CBB-1C9E-442F-AC01-63BBB8277DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF560CBB-1C9E-442F-AC01-63BBB8277DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF560CBB-1C9E-442F-AC01-63BBB8277DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF560CBB-1C9E-442F-AC01-63BBB8277DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF560CBB-1C9E-442F-AC01-63BBB8277DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF560CBB-1C9E-442F-AC01-63BBB8277DDD} = {F3580C8F-E5FD-499B-A52D-93FFD99CE2DD}
+	EndGlobalSection
+EndGlobal
