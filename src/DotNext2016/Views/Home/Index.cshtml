@@ -2,108 +2,345 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+
+<div id="mainHeader">
+    <div id="archiveLinks">
+        <nav class="row">
+            <div class="col-md-4">
+                <nav><a class="nav-link navbar_link" href="https://www.facebook.com/dotnextconf/" target="_blank"><i class="fa fa-facebook"></i>&nbsp;<small>dotnextconf</small></a> <a class="nav-link navbar_link" href="https://vk.com/dotnext" target="_blank"><i class="fa fa-vk"></i>&nbsp;<small>dotnext</small></a> <a class="nav-link navbar_link" href="https://twitter.com/hashtag/dotnext" target="_blank"><i class="fa fa-twitter"></i>&nbsp;<small>#dotnext</small></a></nav>
             </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">Last Conferences <span class="caret"></span></span><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="http://msk2015.dotnext.ru/en/" target="_blank" class="nav-link">Moscow 2015</a></li><li><a href="http://spb2015.dotnext.ru/" target="_blank" class="nav-link">SPb 2015</a></li><li><a href="http://msk2014.dotnext.ru/" target="_blank" class="nav-link">Moscow 2014</a></li><li><a href="http://spb2014.dotnext.ru/" target="_blank" class="nav-link">SPb 2014</a></li></ul>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+            <div class="col-md-2 text-md-right">
+                <a class="navbar-right navbar_link" href="/spb/"><b>RU</b></a>
             </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+        </nav>
+    </div>
+    <div id="mainNavbar">
+        <nav class="navbar bg-faded">
+            <div class="container">
+                <a class="navbar-brand" href="/en/"><img alt="DotNext" src="/assets/images/logo.png" srcset="/assets/images/logo@2x.png 2x" width="230" /></a> <button class="navbar-toggler hidden-md-up pull-xs-right text-primary" type="button" data-toggle="collapse" data-target="#mainNav">&#9776;</button>
+                <div class="collapse navbar-toggleable-sm" id="mainNav">
+                    <ul class="nav navbar-nav"><li class="nav-item"><a class="nav-link text-danger" href="/en/spb/callforpapers/">Call for&nbsp;papers</a></li><li class="nav-item hidden-md-up"><a class="nav-link" href="/spb/"><b>RU</b></a></li></ul>
+                </div>
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+    <div class="jumbotron">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-md-center p-t-3 p-b-3">
+                    <h1 class="m-b-2">DotNext Conference</h1>
+                    <p class="lead">Russia, Saint Petersburg, June&nbsp;3, 2016</p>
+                    <p>Park&nbsp;Inn&nbsp;by&nbsp;Radisson Pulkovskaya Hotel, Pobedy&nbsp;Square,&nbsp;1</p>
+                    <div class="p-y-1">
+                        <a class="btn btn-danger btn-lg" href="/en/spb/callforpapers/" role="button">Call for papers&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+</div>
+<div class="p-y-3">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <p class="lead">DotNext is an independent .NET-conference. June 3, 2016 in St. Petersburg will host the fifth conference.</p>
+                <p>We had Dino Esposito as a speaker, who is a well-known author of the book series on ASP.NET and the leading developers of JetBrains also.</p>
+                <p>At the upcoming conference, 20 speakers will make presentations about the present and future of .NET.</p>
+                <p>
+                    Engineering talks only, <b>hardcore only</b>!
+                </p>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137717161?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-inverse p-y-3">
+
+    <div class="container">
+        <h2 class="text-sm-center m-b-2">Previous DotNext videos</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 m-y-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/xeMbZyhzoAw" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 m-y-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/mnPJZxm2yyw" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 m-y-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/_4-H1Pl2cfE" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 m-y-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/hmDvOoaZXxc" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+@*<div class="p-y-3">
+
+        <div class="container">
+            <h2 class="text-sm-center m-b-2">Speakers</h2>
+            <div class="row text-xs-center">
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/nesteruk.jpg" alt="Dmitry Nesteruk" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Dmitry Nesteruk</p>
+                    <p><small></small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/akinshin.jpg" alt="Andrey Akinshin" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Andrey Akinshin</p>
+                    <p><small>JetBrains</small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/goldshtein.jpg" alt="Sasha Goldshtein" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Sasha Goldshtein</p>
+                    <p><small>Sela Group</small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/esposito.jpg" alt="Dino Esposito" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Dino Esposito</p>
+                    <p><small>JetBrains</small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/sherbakov.jpg" alt="Mihail Sherbakov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Mihail Sherbakov</p>
+                    <p><small>IntelliEgg</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/samarin.jpg" alt="Mihail Samarin" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Mihail Samarin</p>
+                    <p><small>Futurice</small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/tsvettsih.jpg" alt="Denis Tsvettsih" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Denis Tsvettsih</p>
+                    <p><small>AstroSoft</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/baum.jpg" alt="Vitaly Baum" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Vitaly Baum</p>
+                    <p><small>Independent Consultant</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/garavskiy.jpg" alt="Dmitriy Garavskiy" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Dmitriy Garavskiy</p>
+                    <p><small>DevExpress</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/shchegrikovich.jpg" alt="Sergey Shchegrikovich" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Sergey Shchegrikovich</p>
+                    <p><small>dotmailer</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/ivanov.jpg" alt="Dmitriy Ivanov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Dmitriy Ivanov</p>
+                    <p><small>JetBrains</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/skrygan.jpg" alt="Kirill Skrygan" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Kirill Skrygan</p>
+                    <p><small>JetBrains</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/beijer.jpg" alt="Maurice de Beijer" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Maurice de Beijer</p>
+                    <p><small>ABL - The Problem Solver</small>
+                    </p>
+                    <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/chevdar.jpg" alt="Igor Chevdar" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Igor Chevdar</p>
+                    <p><small>SKB Kontur</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/zdebskiy.jpg" alt="Romuald Zdebskiy" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Romuald Zdebskiy</p>
+                    <p><small>Microsoft</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/nevolin.jpg" alt="Roman Nevolin" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Roman Nevolin</p>
+                    <p><small>WaveAccess</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/koshelev.jpg" alt="Vladimir Koshelev" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Vladimir Koshelev</p>
+                    <p><small>ISP RAS</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/soshnikov.jpg" alt="Dmitry Soshnikov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Dmitry Soshnikov</p>
+                    <p><small>Microsoft</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/terehov.jpg" alt="Andrei Terehov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Andrei Terehov</p>
+                    <p><small>EPAM</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/tcukanov.jpg" alt="Nikita Tcukanov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Nikita Tcukanov</p>
+                    <p><small>Promarket</small>
+                    </p>
+                </div>
+                <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 m-b-1"><img src="/assets/images/people/shkredov.jpg" alt="Sergey Shkredov" class="img-fluid center-block m-b-1">
+                    <p class="m-b-0">Sergey Shkredov</p>
+                    <p><small>JetBrains</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+<div class="p-y-3">
+
+    <div class="container">
+        <h2 class="text-sm-center m-b-2">F.A.Q.</h2>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-sm-10">
+                <p>&mdash;&nbsp;A&nbsp;couple of&nbsp;words on&nbsp;what&rsquo;s it&nbsp;going to&nbsp;be?</p>
+                <p>Engineering talks only. Agile, Scrum, clouds, startups and smoothie are being kicked out in&nbsp;no&nbsp;time.</p>
+                <p>&mdash;&nbsp;What the talks are on&nbsp;about?</p>
+                <p>On&nbsp;what we&nbsp;love most: the technology. You won&rsquo;t hear about agile methodologies, salary overviews and &rsquo;new business opportunities&rsquo;. The list of&nbsp;speakers and more info are below. We&nbsp;picked the best ones and made a&nbsp;real effort to&nbsp;keep you entertained. Because we&nbsp;love it&nbsp;hardcore!</p>
+            </div>
+            <div class="col-xs-6 col-md-6 col-sm-10">
+                <p>&mdash;&nbsp;It&rsquo;s not the first DotNext conference, is&nbsp;it?</p>
+                <p>Exactly. We&rsquo;ve tried out the format. As&nbsp;one of&nbsp;the previous DotNext participants said: &laquo;You serve double whiskey when others serve water&raquo;.</p>
+                <p>&mdash;&nbsp;Why would I&nbsp;participate?</p>
+                <p>You&rsquo;ll meet some 500 eccentric people as&nbsp;yourself, learn more about details of&nbsp;the.NET Framework internals, have a&nbsp;coffee with the guys from Jetbrains and DevExpress, who actually make development tools. Tell them what you think of&nbsp;their job! Talk to&nbsp;Microsoft evangelists about the latest things and innovations; Exchange the experience with developers from other companies.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <figure class="figure"><img src="/assets/images/photos/photo2.jpg" class="figure-img img-fluid img-rounded" alt=""><figcaption class="figure-caption">Developers, developers, developers...</figcaption></figure>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <figure class="figure"><img src="/assets/images/photos/photo1.jpg" class="figure-img img-fluid img-rounded" alt=""><figcaption class="figure-caption">DEVELOPERS!</figcaption></figure>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699562">Add an appsetting in config and access it in app.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+</div>
+<div class="p-y-3">
+
+    @*<div class="container">
+                <h2 class="text-sm-center m-b-2">Program committee</h2>
+                <div class="row text-xs-center">
+                    <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3"><img src="/assets/images/people/dmitriev.jpg" alt="" class="img-fluid center-block m-b-1">
+                        <p class="lead m-b-0">Andrey Dmitriev</p>
+                        <p>Program Director</p>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3"><img src="/assets/images/people/akinshin.jpg" alt="" class="img-fluid center-block m-b-1">
+                        <p class="lead m-b-0">Andrey Akinshin</p>
+                        <p>Runtime Section</p>
+                        <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                        </p>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3"><img src="/assets/images/people/nesteruk.jpg" alt="" class="img-fluid center-block m-b-1">
+                        <p class="lead m-b-0">Dmitry Nesteruk</p>
+                        <p>Tools Section</p>
+                        <p><img src="/assets/images/mvp_logo.png" alt="" width="90">
+                        </p>
+                    </div>
+                    <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3"><img src="/assets/images/people/shkredov.jpg" alt="" class="img-fluid center-block m-b-1">
+                        <p class="lead m-b-0">Sergey Shkredov</p>
+                        <p>Tools Section</p>
+                    </div>
+                </div>
+                <div class="row text-xs-center">
+                    <div class="col-xs-7 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3"><img src="/assets/images/people/sherbakov.jpg" alt="" class="img-fluid center-block m-b-1">
+                        <p class="lead m-b-0">Mihail Sherbakov</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+    @*<section class="m-y-3">
+
+        <h2 class="container text-sm-center m-b-2">Contacts</h2>
+        <div class="container text-sm-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h3>Tickets</h3>
+                    <p>
+                        <a href="mailto:tickets@dotnext.ru">tickets@dotnext.ru</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>Program</h3>
+                    <p>
+                        <a href="mailto:program@dotnext.ru">program@dotnext.ru</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>Sponsorship</h3>
+                    <p>
+                        <a href="mailto:sponsors@dotnext.ru">sponsors@dotnext.ru</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>Partnership</h3>
+                    <p>
+                        <a href="mailto:partners@dotnext.ru">partners@dotnext.ru</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>Questions</h3>
+                    <p>
+                        <a href="mailto:questions@dotnext.ru">questions@dotnext.ru</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>Site</h3>
+                    <p>
+                        <a href="mailto:site@dotnext.ru">site@dotnext.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+    <hr class="m-y-3" />
+
+    <div class="container m-y-2">
+        <footer>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-lg-8">
+                    <p>
+                        &copy; <a href="http://dotnext.ru/" target="_blank">DotNext</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run & Deploy</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
+
+
+    <script src="/assets/vendor.js"></script>
+    <script src="/assets/app.js"></script>
 </div>
