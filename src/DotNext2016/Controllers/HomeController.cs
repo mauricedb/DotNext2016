@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.PlatformAbstractions;
 
 namespace DotNext2016.Controllers
 {
@@ -15,7 +16,14 @@ namespace DotNext2016.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            var runtime = PlatformServices.Default.Runtime;
+
+            ViewData["Message"] = "Your application is running on:";
+            ViewData["OperatingSystem"] = runtime.OperatingSystem;
+            ViewData["OperatingSystemVersion"] = runtime.OperatingSystemVersion;
+            ViewData["RuntimeType"] = runtime.RuntimeType;
+            ViewData["RuntimeArchitecture"] = runtime.RuntimeArchitecture;
+            ViewData["RuntimeVersion"] = runtime.RuntimeVersion;
 
             return View();
         }
